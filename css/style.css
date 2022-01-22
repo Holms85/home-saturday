@@ -58,6 +58,7 @@ img {
 
 .header-up {
   display: flex;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 17px;
 }
@@ -84,12 +85,8 @@ img {
   display: flex;
 }
 
-.header-tel {
+.header-item:not(:last-child) {
   margin-right: 32px;
-}
-
-.header-mail {
-  margin-right: 45px;
 }
 
 .header-tel,
@@ -109,6 +106,7 @@ img {
   color: #ffffff;
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: auto;
 }
 
 .nav-list {
@@ -131,12 +129,22 @@ img {
 /* --------------Hero-------- */
 
 .hero {
+  position: relative;
   padding-top: 226px;
   padding-bottom: 33px;
   max-width: 1920px;
   background-image: url(../images/Главный-экран\ 2.jpg);
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+  opacity: 0.3;
 }
 
 .hero-title {
