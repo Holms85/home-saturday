@@ -226,6 +226,108 @@ img {
   overflow: hidden;
 }
 
+.activities {
+  padding-top: 44px;
+  padding-bottom: 80px;
+  background-color: rgba(112, 207, 41, 0.07);
+}
+
+.activities-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.list--activities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 37px 45px;
+}
+
+.activities-icon {
+  margin-bottom: 16px;
+}
+
+.card {
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.card-main-title {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.card-list__item {
+  position: relative;
+}
+
+.card-list__item:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.card-title {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 240px;
+
+  color: #ffffff;
+}
+
+.card-price {
+  position: absolute;
+  left: 17px;
+  bottom: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.card-link__div {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+.card-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
 /* -------------GALLERY--------- */
 
 .gallery {
@@ -287,4 +389,56 @@ img {
   margin-right: 32px;
   margin-bottom: 32px;
   border-radius: 6px;
+}
+
+.about-b {
+  padding-top: 76px;
+  padding-bottom: 79px;
+}
+
+.about-b__container {
+  display: flex;
+}
+
+.about-b__title {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.about-b__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.about-b__text--none {
+  display: none;
+}
+
+.read-clothe {
+  display: none;
+}
+
+.check-hidden {
+  /* appearance: none; */
+}
+
+.check-hidden:checked ~ .about-b__text--none {
+  display: block;
+}
+
+.check-hidden:checked ~ .read-label > .read {
+  display: none;
+}
+
+.check-hidden:checked ~ .read-label > .read-clothe {
+  display: block;
 }
